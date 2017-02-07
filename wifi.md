@@ -23,9 +23,9 @@ Tessel 2 has robust Wifi built into the board. Let's get connected!
 
 To connect to a new network, enter in your command line (without brackets)
 
-`t2 wifi -n <network-name> -p <password>`  
+`t2 wifi -n <network-name> -p <password> -s "<security>"`  
 
-_Note: Wifi radio on Tessel can only connect to 2.4GHz networks. As of yet, you cannot connect over a 5GHz network.
+_Note: Wifi radio on Tessel can only connect to 2.4GHz networks. As of yet, you cannot connect over a 5GHz network. Also for security levels instead of wpa use psk, and for wpa2 use psk2. From a mac you can see which type it is by using <kbd>option</kbd> and clicking on the wifi icon in the top bar.
 
 _Note: if you have spaces in your network name, or password, add quotes around the network name and/or password_
 `t2 wifi -n "<network name with spaces>" -p "<password with spaces>"`
